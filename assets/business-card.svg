@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="600" viewBox="0 0 1050 600">
+  <rect width="1050" height="600" fill="#030303" rx="16"/>
+  <image href="/logo.png" x="40" y="40" width="220" height="220"/>
+  <text x="280" y="90" font-family="Inter, Arial" font-size="36" fill="#fff" font-weight="700">TechMiner Global</text>
+  <text x="280" y="132" font-family="Inter, Arial" font-size="18" fill="#99f8c7">CONNECT • STORE • POWER • GROW</text>
+  <g transform="translate(40,300)" fill="#cfeee0" font-family="Inter, Arial">
+    <text x="0" y="32" font-size="20">Alex Morgan</text>
+    <text x="0" y="60" font-size="16" fill="#9be9bd">Head of Partnerships</text>
+    <text x="0" y="96" font-size="16">T: +1 555 555 5555</text>
+    <text x="0" y="124" font-size="16">E: alex@techminer.global</text>
+    <text x="0" y="152" font-size="16">W: www.techminer.global</text>
+  </g>
+  <rect x="720" y="40" width="290" height="220" rx="8" fill="none" stroke="#073826" stroke-width="2"/>
+  <text x="740" y="120" font-family="Inter, Arial" font-size="20" fill="#bfefd8">Building a smarter, connected future</text>
+</svg>

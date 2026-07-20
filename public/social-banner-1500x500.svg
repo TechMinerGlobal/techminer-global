@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00ff66"/>
+      <stop offset="100%" stop-color="#00cc99"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #040404; }
+      .title { font-family: Inter, Arial, sans-serif; font-size: 56px; fill: #fff; font-weight:800 }
+      .tag { font-family: Inter, Arial, sans-serif; font-size:18px; fill:#bfeedb }
+    </style>
+  </defs>
+  <rect class="bg" width="1500" height="500"/>
+  <image href="/logo.png" x="60" y="50" width="280" height="280" preserveAspectRatio="xMidYMid meet"/>
+  <text x="380" y="140" class="title">TECHMINER GLOBAL</text>
+  <text x="380" y="190" class="title" fill="url(#g2)">NETWORK</text>
+  <text x="380" y="230" class="tag">CONNECT • STORE • POWER • GROW</text>
+</svg>
