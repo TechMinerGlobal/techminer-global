@@ -1,0 +1,23 @@
+name: Site Monitor
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check site availability
+        run: |
+          set -e
+          URL="https://techminerglobal.com"
+          echo "Checking $URL"
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$URL")
+          echo "HTTP status: $STATUS"
+          if [ "$STATUS" -ne 200 ]; then
+            echo "Site check failed: HTTP $STATUS"
+            exit 1
+          fi
+          echo "Site check OK"

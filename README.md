@@ -1,5 +1,7 @@
 # TechMiner Global
 
+[![Pages Deploy](https://github.com/TechMinerGlobal/techminer-global/actions/workflows/deploy-gh-pages.yml/badge.svg)](https://github.com/TechMinerGlobal/techminer-global/actions/workflows/deploy-gh-pages.yml) [![Site Monitor](https://github.com/TechMinerGlobal/techminer-global/actions/workflows/monitor-site.yml/badge.svg)](https://github.com/TechMinerGlobal/techminer-global/actions/workflows/monitor-site.yml)
+
 Next.js website scaffold for TechMiner Global.
 
 Getting started (using `npm`):
