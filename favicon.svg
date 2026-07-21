@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00FF66"/>
+      <stop offset="100%" stop-color="#00CC99"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#040404"/>
+  <circle cx="32" cy="24" r="14" fill="url(#g)"/>
+  <text x="32" y="42" font-family="Inter, Arial" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="700">TM</text>
+</svg>

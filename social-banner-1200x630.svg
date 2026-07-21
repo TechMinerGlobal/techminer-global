@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00ff66"/>
+      <stop offset="100%" stop-color="#00cc99"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #070707; }
+      .title { font-family: Inter, Arial, sans-serif; font-size: 48px; fill: #fff; font-weight:700 }
+      .tag { font-family: Inter, Arial, sans-serif; font-size:20px; fill:#cfeee0 }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630"/>
+  <rect x="40" y="40" width="1120" height="550" rx="12" fill="rgba(255,255,255,0.02)"/>
+  <image href="/logo.png" x="60" y="60" width="220" height="220" preserveAspectRatio="xMidYMid meet"/>
+  <text x="300" y="120" class="title">TECHMINER</text>
+  <text x="300" y="165" class="title" fill="url(#g)">GLOBAL NETWORK</text>
+  <text x="300" y="210" class="tag">CONNECT • STORE • POWER • GROW</text>
+  <g transform="translate(300,260)">
+    <rect x="0" y="0" width="820" height="2" fill="#163a2b"/>
+    <text x="0" y="40" class="tag">Building a smarter, connected future — secure, scalable, human-centred technology.</text>
+  </g>
+</svg>
