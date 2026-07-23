@@ -1,139 +1,260 @@
-import Layout from '../components/Layout'
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <Layout>
-      <header className="bg-gradient-to-b from-black/60 via-black to-black">
-        <section className="container py-20">
+    <main>
+
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
+        <div className="max-w-7xl mx-auto px-6 py-28">
+
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-6">Technology Made Simple</h1>
-            <p className="text-xl text-gray-300 mb-8">Helping people, businesses, and communities connect, protect, power, and grow.</p>
 
-            <div className="flex flex-wrap gap-4">
-              <a href="#get-started" className="inline-flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-black font-semibold rounded">Get Started</a>
-              <a href="#services" className="inline-flex items-center px-6 py-3 border border-gray-700 text-gray-200 rounded">Explore Services</a>
+            <span className="inline-block bg-blue-500/20 text-blue-200 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              Technology • Innovation • Global Solutions
+            </span>
+
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8">
+              Engineering
+              <span className="text-blue-400"> Tomorrow's </span>
+              Technology Today
+            </h1>
+
+            <p className="text-xl text-gray-300 mb-10 leading-8">
+              TechMiner Global partners with organisations to design,
+              build and manage innovative technology solutions that
+              drive growth, improve security and accelerate digital
+              transformation.
+            </p>
+
+            <div className="flex flex-wrap gap-5">
+
+              <Link
+                href="/services"
+                className="bg-blue-600 hover:bg-blue-700 transition px-8 py-4 rounded-lg font-semibold"
+              >
+                Explore Services
+              </Link>
+
+              <Link
+                href="/contact"
+                className="border border-white/30 hover:bg-white hover:text-slate-900 transition px-8 py-4 rounded-lg font-semibold"
+              >
+                Contact Us
+              </Link>
+
             </div>
-          </div>
-        </section>
-      </header>
 
-      <section id="get-started" className="container py-16">
-        <div className="max-w-4xl">
-          <h2 className="text-2xl font-bold mb-6">This is where we'll make it stand out</h2>
-          <p className="text-gray-300 mb-6">Most tech websites talk about technology. We'll talk about people. For example, instead of saying "We deploy decentralized storage nodes." we'll say "We help protect your important information with secure and reliable storage solutions."</p>
+          </div>
+
         </div>
       </section>
 
-      <section id="services" className="container py-12 border-t border-gray-800">
-        <h2 className="text-2xl font-bold mb-6">The Four Pillars</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="flex items-start gap-4">
-            <div className="text-3xl">🌐</div>
-            <div>
-              <h3 className="font-semibold">Connect</h3>
-              <p className="text-gray-300">Helping people stay connected.</p>
-            </div>
+      {/* About Preview */}
+
+      <section className="py-24">
+
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+          <div>
+
+            <h2 className="text-4xl font-bold mb-8">
+              Technology That Powers Business
+            </h2>
+
+            <p className="text-lg text-gray-600 mb-6">
+              We help businesses modernise their technology,
+              strengthen cybersecurity, migrate to the cloud and
+              build intelligent software solutions.
+            </p>
+
+            <p className="text-lg text-gray-600">
+              From strategy to deployment, TechMiner Global provides
+              reliable technology services that enable organisations
+              to innovate with confidence.
+            </p>
+
           </div>
 
-          <div className="flex items-start gap-4">
-            <div className="text-3xl">🛡️</div>
-            <div>
-              <h3 className="font-semibold">Protect</h3>
-              <p className="text-gray-300">Keeping your information safe.</p>
+          <div className="grid grid-cols-2 gap-6">
+
+            <div className="rounded-xl bg-gray-100 p-8">
+              <h3 className="text-4xl font-bold text-blue-600">10+</h3>
+              <p className="mt-2 text-gray-600">
+                Technology Services
+              </p>
             </div>
+
+            <div className="rounded-xl bg-gray-100 p-8">
+              <h3 className="text-4xl font-bold text-blue-600">
+                Global
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Business Reach
+              </p>
+            </div>
+
+            <div className="rounded-xl bg-gray-100 p-8">
+              <h3 className="text-4xl font-bold text-blue-600">
+                Secure
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Infrastructure
+              </p>
+            </div>
+
+            <div className="rounded-xl bg-gray-100 p-8">
+              <h3 className="text-4xl font-bold text-blue-600">
+                24/7
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Support
+              </p>
+            </div>
+
           </div>
 
-          <div className="flex items-start gap-4">
-            <div className="text-3xl">⚡</div>
-            <div>
-              <h3 className="font-semibold">Power</h3>
-              <p className="text-gray-300">Supporting cleaner energy.</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <div className="text-3xl">🚀</div>
-            <div>
-              <h3 className="font-semibold">Grow</h3>
-              <p className="text-gray-300">Helping you embrace technology.</p>
-            </div>
-          </div>
         </div>
+
       </section>
 
-      <section className="container py-12 border-t border-gray-800">
-        <h2 className="text-2xl font-bold mb-6">The Companies</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="p-6 bg-gray-900 rounded-lg">
-            <h4 className="font-semibold">TechMiner Global Network</h4>
-            <p className="text-gray-300 mt-2">Connectivity, secure data storage, and EV charging.</p>
+      {/* Services */}
+
+      <section className="bg-gray-50 py-24">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <h2 className="text-4xl font-bold text-center mb-4">
+            Our Core Services
+          </h2>
+
+          <p className="text-center text-gray-600 text-lg mb-16">
+            Delivering scalable, secure and future-ready technology.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {[
+              "Software Development",
+              "Artificial Intelligence",
+              "Cloud Infrastructure",
+              "Cyber Security",
+              "Network Engineering",
+              "Technology Consulting",
+            ].map((service) => (
+
+              <div
+                key={service}
+                className="bg-white rounded-xl p-8 shadow hover:shadow-xl transition"
+              >
+
+                <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+
+                  <span className="text-2xl">✓</span>
+
+                </div>
+
+                <h3 className="text-2xl font-semibold mb-4">
+                  {service}
+                </h3>
+
+                <p className="text-gray-600">
+                  Professional solutions designed to improve
+                  efficiency, security and business growth.
+                </p>
+
+              </div>
+
+            ))}
+
           </div>
-          <div className="p-6 bg-gray-900 rounded-lg">
-            <h4 className="font-semibold">TechMiner Global Solutions</h4>
-            <p className="text-gray-300 mt-2">Technology consulting and business solutions.</p>
-          </div>
-          <div className="p-6 bg-gray-900 rounded-lg">
-            <h4 className="font-semibold">TechMiner Global Services</h4>
-            <p className="text-gray-300 mt-2">Installation, maintenance, and customer support.</p>
-          </div>
+
         </div>
- </section>
 
-{/* About */}
-<section className="container py-16 border-t border-gray-800">
-  <h2 className="text-3xl font-bold mb-6">About TechMiner Global</h2>
+      </section>
 
-  <p className="text-gray-300 text-lg leading-8 max-w-4xl">
-    TechMiner Global helps individuals, businesses, and communities adopt
-    modern technology through secure connectivity, decentralized data
-    storage, telecommunications, EV charging solutions, and professional
-    technology services. Our goal is to make technology simple, reliable,
-    and accessible for everyone.
-  </p>
-</section>
+      {/* Why Choose Us */}
 
-{/* Contact */}
-<section className="container py-16 border-t border-gray-800">
-  <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
+      <section className="py-24">
 
-  <div className="grid md:grid-cols-2 gap-8">
+        <div className="max-w-7xl mx-auto px-6">
 
-    <div className="bg-gray-900 rounded-xl p-6">
-      <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Why Choose TechMiner Global?
+          </h2>
 
-      <p className="text-gray-300 mb-3">
-        📧 info@techminerglobal.com
-      </p>
+          <div className="grid md:grid-cols-3 gap-10">
 
-      <p className="text-gray-300 mb-3">
-        🌐 www.techminerglobal.com
-      </p>
+            <div className="text-center">
 
-      <p className="text-gray-300">
-        We welcome enquiries from individuals, businesses, and partners
-        looking for innovative technology solutions.
-      </p>
-    </div>
+              <h3 className="text-2xl font-semibold mb-4">
+                Innovation
+              </h3>
 
-    <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-xl p-8">
-      <h3 className="text-2xl font-bold mb-4">
-        Technology Made Simple
-      </h3>
+              <p className="text-gray-600">
+                Modern technologies that keep your business ahead of
+                the competition.
+              </p>
 
-      <p className="text-white">
-        Whether you're looking for secure storage, connectivity,
-        telecommunications, EV charging, or technology services,
-        TechMiner Global is here to help.
-      </p>
-    </div>
+            </div>
 
-  </div>
-</section>
+            <div className="text-center">
 
-<footer className="border-t border-gray-800 py-8 text-center text-gray-400">
-  © {new Date().getFullYear()} TechMiner Global. All Rights Reserved.
-</footer>
+              <h3 className="text-2xl font-semibold mb-4">
+                Security
+              </h3>
 
-</Layout>
-)
+              <p className="text-gray-600">
+                Enterprise-grade security practices protecting your
+                infrastructure and data.
+              </p>
+
+            </div>
+
+            <div className="text-center">
+
+              <h3 className="text-2xl font-semibold mb-4">
+                Partnership
+              </h3>
+
+              <p className="text-gray-600">
+                Long-term technology partnerships focused on business
+                success.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* CTA */}
+
+      <section className="bg-blue-600 text-white">
+
+        <div className="max-w-6xl mx-auto px-6 py-24 text-center">
+
+          <h2 className="text-5xl font-bold mb-6">
+            Ready to Build the Future?
+          </h2>
+
+          <p className="text-xl mb-10 text-blue-100">
+            Let's create innovative technology solutions together.
+          </p>
+
+          <Link
+            href="/contact"
+            className="inline-block bg-white text-blue-600 px-10 py-4 rounded-lg font-bold hover:bg-gray-100 transition"
+          >
+            Get Started
+          </Link>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
 }
